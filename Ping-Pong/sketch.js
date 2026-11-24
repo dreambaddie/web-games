@@ -172,6 +172,8 @@ function restartPause() {
 
         if (mouseIsPressed) {
             
+            p1Controls = height/2
+            p2Controls = height/2
             
             x = width/2 // sets the pong to the middle of the screen
             y = height/2

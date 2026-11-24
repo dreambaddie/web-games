@@ -109,6 +109,7 @@ function draw() {
         else {
             text("p2 wins!", width/2, height/2);
             restartPause();
+            controlSpeed = 0 // sets control speed to zero so you cant move controls
         }
     }
 
@@ -121,6 +122,7 @@ function draw() {
         else {
             text("p1 wins!", width/2, height/2);
             restartPause();
+            controlSpeed = 0 // sets control speed to zero so you cant move controls
         }
     }
 
@@ -167,7 +169,6 @@ function restartPause() {
         fill(255);
         text("play again?", width/2, height/2 +120);
         
-        controlSpeed = 0 // sets control speed to zero so you cant move controls
 
 
         if (mouseIsPressed) {

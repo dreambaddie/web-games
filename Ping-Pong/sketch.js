@@ -109,7 +109,6 @@ function draw() {
         else {
             text("p2 wins!", width/2, height/2);
             restartPause();
-            controlSpeed = 0 // sets control speed to zero so you cant move controls
         }
     }
 
@@ -122,7 +121,6 @@ function draw() {
         else {
             text("p1 wins!", width/2, height/2);
             restartPause();
-            controlSpeed = 0 // sets control speed to zero so you cant move controls
         }
     }
 
@@ -152,7 +150,7 @@ function restartPause() {
     velocityX = 0 // stops the pong after someone wins
     velocityY = 0
 
-
+    controlSpeed = 0 // sets control speed to zero so you cant move controls
 
     fill(50,50,50); // button
     stroke(200);
